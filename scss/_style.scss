@@ -1,0 +1,138 @@
+
+h1{
+  display: none;
+}
+@mixin set-font($family:'proxima-nova',$weight:400,$style:normal){
+  font-family: $family,sans-serif;
+  font:$style;
+  weight:$weight;
+}
+body{
+  @include set-font;
+  color:#5e6372;
+  font-size: 14px;
+}
+#nav{
+  background-image: url("../img/header.png");
+  background-size: cover;
+  height: 1080px;
+}
+.navbar-nav{
+  color: #fff;
+}
+#brand{
+  color: white;
+}
+.nav-link{
+   color: white;
+ }
+.nav-link:hover{
+  border: 1px solid #ffffff;
+}
+.btn-header{
+  color: white;
+  border: 1px solid white;
+}
+.btn-header:hover{
+  color: #ff0b00;
+  background-color: white;
+}
+#btnPrice{
+  margin-top: 50px;
+  height: 60px;
+  width: 210px;
+}
+#btnWatch{
+  border: 1px solid #e3785c;
+  margin-top: 50px;
+  height: 60px;
+  width: 210px;
+}
+#services{
+  background-color: #f6f6f6;
+
+}
+h2{
+  @include set-font();
+  font-weight: bold;
+  font-size: 48px;
+  color:#ff0b00;
+}
+h3{
+  font-size: 30px;
+  color:#ff0b00;
+}
+.portofolio{
+  background-color: #f6f6f6;
+}
+
+#newsletter {
+  height: 490px;
+  background: url("../img/newsletter.png");
+  background-size: cover;
+  h2 {
+    color: white;
+  }
+}
+.carousel-caption{
+  top: 50px;
+  h2{
+    color: white;
+  }
+}
+input{
+  background: rgba(255,255,255,0.3);
+  border-radius: 26px;
+  border: none;
+  position: relative;
+}
+#btnNewsletter{
+  background-color: #fff;
+  position: absolute;
+  right: 26%;
+  height: 29px;
+}
+.bol{
+  border: 1px solid gray;
+  color: blue;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-right: 10px;
+}
+footer{
+  color: #a7acbc;
+  .gray{
+  font-weight: bold;
+  }
+}
+.vet{
+  font-weight: bold;
+}
+/** ENKEL CSS GROTER DAN MOBIEL**/
+/** MEDIA QUERIES **/
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body{
+    font-size: 18px;
+  }
+  #services{
+    height: 600px;
+  }
+  footer{
+    height: 390px;
+
+  }
+}
